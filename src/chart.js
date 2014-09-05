@@ -1,6 +1,7 @@
 /*These lines are all chart setup.  Pick and choose which chart features you want to utilize. */
+d3.json('relativeOutputArray.json', function(data) {
 nv.addGraph(function() {
-  var chart = nv.models.lineChart()
+  var chart = nv.models.multiBarHorizontalChart()
                 .margin({left: 100})  //Adjust chart margins to give the x-axis some breathing room.
                 .useInteractiveGuideline(true)  //We want nice looking tooltips and a guideline!
                 .transitionDuration(350)  //how fast do you want the lines to transition?
@@ -19,7 +20,7 @@ nv.addGraph(function() {
       .tickFormat('d');
 
   /* Done setting the chart up? Time to render it!*/
-  var myData = sinAndCos();   //You need data...
+  
 
   d3.select('#chart svg')    //Select the <svg> element you want to render the chart in.   
       .datum(data)         //Populate the <svg> element with chart data...
@@ -28,4 +29,8 @@ nv.addGraph(function() {
   //Update the chart when window resizes.
   nv.utils.windowResize(function() { chart.update() });
   return chart;
+  });
 });
+
+
+
