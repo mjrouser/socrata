@@ -1,5 +1,5 @@
 /*These lines are all chart setup.  Pick and choose which chart features you want to utilize. */
-d3.json('relativeOutputArray.json', function(data) {
+d3.json('outputArray.json', function(data) {
 nv.addGraph(function() {
   var chart = nv.models.multiBarHorizontalChart()
                 .margin({left: 100})  //Adjust chart margins to give the x-axis some breathing room.
