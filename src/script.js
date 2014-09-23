@@ -11,3 +11,13 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png',
 $.getJSON('growthrate_merge.geojson', function(data) {
 		L.geoJson(data).addTo(map);
 });
+
+var overlayMaps = {
+
+	"1966-1969" : 66,
+	"1973-1979" : 73,
+	"1990-2000" : 90,
+	"1960-2004" : 60,
+};
+
+L.control.layers(overlayMaps).addTo(map);
