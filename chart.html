@@ -12,9 +12,16 @@
 
 		}
 
-       .navbar {
-        margin-left: 500px;
-        margin-right: 500px;
+    html, body, #map {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+    
+
+      .thingy {
+         position: absolute;
+         bottom: 0;
       }
 
 	</style>
@@ -34,27 +41,21 @@
   	<svg></svg>
 	</div>
 
-
-      <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            
-            <li><a href="index.html">Map</a></li>
-            <li class="active"><a href="chart.html">Chart</a></li>
-          </ul>
-        </div>
-      </div>
+<div class="thingy">
+<div class="btn-group btn-group-justified btn-group-fixed-bottom" >
+    <div class="btn-group">
+  <a href="index.html"><button type="button" class="btn btn-default">CartoDB</button></a>
     </div>
+    <div class="btn-group">
+    <a href="chart.html"><button type="button" class="btn btn-default">Chart</button></a>
+    </div>  
+    <div class="btn-group"> 
+    <a href="map.html"><button type="button" class="btn btn-default">Leaflet</button></a>
+    </div>
+</div> 
+</div>
+
+
        
      
 
