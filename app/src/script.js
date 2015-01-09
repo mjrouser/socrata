@@ -1,3 +1,6 @@
+define(['leaflet','LMap'], function(leaflet , LMap){
+
+
 var map = L.map('map').setView([39.39, -98.59], 4);
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png',
@@ -8,7 +11,7 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png',
 
 	}).addTo(map);
 
-$.getJSON('growthrate_merge.geojson', function(data) {
+$.getJSON('../app/data/growthrate_merge.geojson', function(data) {
 		L.geoJson(data).addTo(map);
 });
 
@@ -21,3 +24,5 @@ var overlayMaps = {
 };
 
 L.control.layers(overlayMaps).addTo(map);
+
+});
