@@ -1,0 +1,72 @@
+    html, body, .tab-content, .tab-pane, #dataMap {
+        height: 99%;
+        padding: 0;
+        margin: 0;
+      }
+   
+
+      .thingy {
+         position: absolute;
+         bottom: 0;
+      }
+ 
+
+
+
+/* custom inclusion of right, left and below tabs */
+
+.tabs-below > .nav-tabs
+ {
+  border-bottom: 0;
+}
+/*
+.tab-content > .tab-pane
+ {
+  display: none;
+}
+
+.tab-content > .active {
+  display: block;
+}
+*/
+.tabs-below > .nav-tabs {
+  border-top: 1px solid #ddd;
+}
+
+.tabs-below > .nav-tabs > .active {
+  border-top: none;
+}
+
+
+.tabs-below > .nav-tabs > li {
+  margin-top: -1px;
+  margin-bottom: 0;
+  border-top: 1px solid #ddd;
+}
+
+ li > .active {
+  border-top: 0px;
+
+}
+
+
+.tabs-below > .nav-tabs > li > a {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+.tabs-below > .nav-tabs > li > a:hover,
+.tabs-below > .nav-tabs > li > a:focus {
+  
+  border-bottom-color: transparent;
+}
+
+.tabs-below > .nav-tabs > .active > a,
+.tabs-below > .nav-tabs > .active > a:hover,
+.tabs-below > .nav-tabs > .active > a:focus {
+  border-color: transparent #ddd #ddd #ddd;
+}
+
+
+

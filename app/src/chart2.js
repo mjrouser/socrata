@@ -1,4 +1,5 @@
-d3.json('outputArray.json', function(data) {
+define(['nvD3'], function(nVd3){
+d3.json('app/src/outputArray.json', function(data) {
   nv.addGraph(function() {
     var chart = nv.models.cumulativeLineChart()
         .x(function(d) { return d[0] })
@@ -33,4 +34,6 @@ d3.json('outputArray.json', function(data) {
 
     return chart;
   });
+});
+
 });

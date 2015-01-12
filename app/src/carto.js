@@ -1,4 +1,4 @@
-define(['carto'], function (carto) {
+define( function () {
 
 	 function main() {
             cartodb.createVis('map', 'http://mjrouser.cartodb.com/api/v2/viz/193f7c9c-32d5-11e4-a042-0e10bcd91c2b/viz.json', {
