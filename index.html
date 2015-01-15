@@ -7,21 +7,9 @@
 
     <title>Average Growth of Farm Output by State</title>
 
-    
-    
-  
-    <style>
-    
-
-
-
-    
-    </style>
     <!-- CSS includes -->
     <link href="app/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <!--
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
-    -->
     <link rel="stylesheet" type="text/css" href="app/lib/leaflet-0.7.3/leaflet.css">
     
     
@@ -41,8 +29,8 @@
       <div role="tabpanel" class="tab-pane fade" id="charto">
           <div id="chart">chart text</div>
       </div>  
-      <div role="tabpanel" class="tab-pane fade" id="leaf"> 
-          <div id="dataMap"></div>
+      <div data-bind='template: { name: "views/leaflet-map"}' role="tabpanel" class="tab-pane fade" id="leaf"> 
+          
       </div>
     </div>
 
@@ -61,13 +49,8 @@
  
 
 
-
-
-
-
-
-
+<!--
     <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
-
+-->
   </body>
 </html>
